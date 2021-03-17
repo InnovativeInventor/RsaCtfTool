@@ -50,6 +50,9 @@ if __name__ == "__main__":
         "--timeout", help="Timeout for long attacks.", default=60, type=int
     )
     parser.add_argument(
+        "--threads", help="Number of threads to use", default=1, type=int
+    )
+    parser.add_argument(
         "--createpub",
         help="Take n and e from cli and just print a public key then exit",
         action="store_true",
